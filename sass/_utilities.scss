@@ -1,0 +1,48 @@
+%btn-extend {
+	display: block;
+	padding: 1.5rem 2rem;
+	transition: all 0.5s;
+	border: none;
+	cursor: pointer;
+	font-size: 1.6rem;
+	color: $dark-color;
+}
+
+.py {
+	&-1 {
+		padding: 1rem 0;
+	}
+
+	&-2 {
+		padding: 2rem 0;
+	}
+
+	&-3 {
+		padding: 3rem 0;
+	}
+
+	&-4 {
+		padding: 4rem 0;
+	}
+}
+
+%section-title {
+	font-size: 3rem;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 8rem;
+	color: $primary-color;
+
+	:after {
+		content: " ";
+		display: block;
+		margin: 0 auto;
+		width: 15%;
+		padding-top: 0.5rem;
+		border-bottom: 3px solid skyblue;
+	}
+}
+
+.active {
+	border-color: $primary-color !important;
+}
