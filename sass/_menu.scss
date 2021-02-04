@@ -1,82 +1,79 @@
 // This will create the hamburger menu
 .menu {
-	top: 1rem;
-	right: 2rem;
-	position: fixed;
-	z-index: 5;
-	cursor: pointer;
-	transition: all 0.5s;
-	display: none;
+  top: 1rem;
+  right: 2rem;
+  position: fixed;
+  z-index: 5;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: none;
 
-	&__bar {
-		width: 2.75rem;
-		height: 3px;
-		background-color: #fff;
-		margin: 6px 0;
-		transition: all 0.25s;
-	}
+  &__bar {
+    width: 3rem;
+    height: 3.05px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: all 0.25s;
+  }
 }
 
 // This is the content that will appear when the button is clicked
 
 .nav-wrapper {
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 4;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
-	height: 0;
-	transition: all 0.4s;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  height: 0;
+  transition: all 0.4s;
 
-	.nav-content {
-		height: auto;
-		width: auto;
-		display: none;
+  .nav-content {
+    height: auto;
+    width: auto;
+    display: none;
 
-		&-sections {
-			padding-bottom: 2rem;
-			font-size: 3rem;
-			font-weight: 600;
-			text-align: center;
+    &-sections {
+      padding-bottom: 2rem;
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
 
-			&__item {
-				padding-bottom: 1.5rem;
+      &__item {
+        padding-bottom: 1.5rem;
 
-				& a {
-					color: $dark-color;
-					transition: all 0.45s;
+        & a {
+          color: $dark-color;
+          transition: all 0.45s;
 
-					&:hover {
-						color: $light-color;
-					}
-				}
-			}
-		}
+          &:hover {
+            color: $light-color;
+          }
+        }
+      }
+    }
 
-		&-social {
-			display: flex;
-			justify-content: space-evenly;
+    &-social {
+      display: flex;
+      justify-content: space-evenly;
 
-			&__item {
-				& i:hover {
-					transition: all 0.45s;
-					color: #fff;
-				}
-
-				&:nth-child(2) {
-					margin: 0 2rem;
-				}
-			}
-		}
-	}
+      &__item {
+        margin: 0 0.5rem;
+        & i:hover {
+          transition: all 0.45s;
+          color: #fff;
+        }
+      }
+    }
+  }
 }
 
-// this will hide the content that is displayed onne menu
+// this will hide the content that is displayed on menu
 .hide {
-	display: none;
+  display: none;
 }

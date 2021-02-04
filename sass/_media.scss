@@ -1,379 +1,400 @@
 @media only screen and (min-width: 1999px) {
-	.free-nav ul {
-		margin-left: 12rem;
-	}
+  .free-nav ul {
+    margin-left: 12rem;
+  }
 
-	.nav {
-		&__container {
-			max-width: 1400px;
-		}
-	}
+  .nav {
+    &__container {
+      max-width: $response-width-1;
+    }
+  }
 
-	.about-me {
-		&__container {
-			max-width: 1400px;
-		}
-	}
+  .about-me {
+    &__container {
+      max-width: $response-width-1;
+    }
+  }
 
-	.projects {
-		&__container {
-			max-width: 1400px;
-		}
-	}
+  .projects {
+    &__container {
+      max-width: $response-width-1;
+    }
+  }
 }
 @media only screen and (max-width: 1550px) {
-	.free-nav ul {
-		margin-left: 1.5rem;
-	}
+  .free-nav ul {
+    margin-left: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 1450px) {
-	.nav {
-		&__container {
-			max-width: 1050px;
-		}
-	}
+  .nav {
+    &__container {
+      max-width: $response-width-2;
+    }
+  }
 
-	.free-nav ul {
-		margin-left: 2rem;
-	}
+  .free-nav ul {
+    margin-left: 2rem;
+  }
 
-	.about-me {
-		height: auto;
+  .about-me {
+    height: auto;
 
-		&__container {
-			max-width: 1050px;
-			min-height: 100vh;
-		}
-	}
+    &__container {
+      max-width: $response-width-2;
+      min-height: 100vh;
+    }
+  }
 
-	.projects {
-		&__container {
-			max-width: 1050px;
-		}
+  .projects {
+    &__container {
+      max-width: $response-width-2;
+    }
 
-		&__grid__item {
-			height: 52.5rem;
+    &__grid__item {
+      height: 52.5rem;
 
-			& div[class^="image"] {
-				height: 50%;
-				width: 100%;
-			}
-		}
-	}
+      & div[class^="image"] {
+        height: 50%;
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-	.nav {
-		&__container {
-			max-width: 900px;
-		}
-	}
+  .nav {
+    &__container {
+      max-width: $response-width-3;
+    }
+  }
 
-	.free-nav ul {
-		margin-left: 1.25rem;
-	}
+  .free-nav ul {
+    margin-left: 1.25rem;
+  }
 
-	.about-me {
-		height: auto;
-		&__container {
-			max-width: 900px;
-		}
-		&__grid {
-			grid-template-columns: repeat(3, 1fr);
-		}
-	}
+  .about-me {
+    height: auto;
+    &__container {
+      max-width: $response-width-3;
+    }
+  }
 
-	.projects {
-		&__container {
-			max-width: 900px;
-		}
+  .projects {
+    &__container {
+      max-width: $response-width-3;
+    }
 
-		&__grid__item {
-			height: 52.5rem;
+    &__grid__item {
+      height: 55rem;
 
-			& div[class^="image"] {
-				height: 50%;
-				width: 100%;
-			}
+      & div[class^="image"] {
+        height: 50%;
+        width: 100%;
+      }
 
-			&__buttons a {
-				padding: 0.8rem;
-			}
-		}
-	}
+      &__buttons a {
+        padding: 0.8rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-	.nav {
-		&__container {
-			max-width: 900px;
-		}
-	}
+  .free-nav ul {
+    top: 25%;
+    margin-left: 0.5rem;
+  }
 
-	.free-nav ul {
-		top: 25%;
-		margin-left: 0.5rem;
-	}
+  .header {
+    min-height: 64vh;
+  }
 
-	.header {
-		height: 64vh;
-	}
+  .about-me {
+    height: auto;
+    &__description {
+      padding-left: 1rem;
+    }
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      &__item {
+        padding: 3rem 0;
+      }
+    }
+  }
 
-	.about-me {
-		height: auto;
-		&__container {
-			max-width: 900px;
-		}
-		&__description {
-			padding-left: 1rem;
-		}
-		&__grid {
-			grid-template-columns: repeat(2, 1fr);
-			&__item {
-				padding: 3rem 0;
-			}
-		}
-	}
+  .projects {
+    &__grid {
+      padding-left: 1rem;
 
-	.projects {
-		&__container {
-			max-width: 900px;
-		}
-		&__grid {
-			padding-left: 1rem;
-
-			&__item__buttons {
-				padding: 0.8rem;
-			}
-		}
-	}
+      &__item__buttons {
+        padding: 0.8rem;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 990px) {
-	.menu {
-		display: block;
-		top: 0.6rem;
-		right: 1.05rem;
-	}
+  .menu {
+    display: block;
+    top: 0.6rem;
+    right: 1.05rem;
+  }
 
-	.nav {
-		display: none;
-	}
+  .nav {
+    display: none;
+  }
 
-	.free-nav {
-		display: none;
-	}
+  .free-nav {
+    display: none;
+  }
 }
 
 // ipad
 @media only screen and (max-width: 900px) {
-	// change the background animation
-	.animation {
-		& li:nth-child(2) {
-			left: 5%;
-		}
-		& li:nth-child(6) {
-			left: 14%;
-			height: 90px;
-			width: 90px;
-		}
+  // change the background animation
+  .animation {
+    & li:nth-child(2) {
+      left: 5%;
+    }
+    & li:nth-child(6) {
+      left: 14%;
+      height: 90px;
+      width: 90px;
+    }
 
-		& li:nth-child(7) {
-			left: 29%;
-		}
-	}
+    & li:nth-child(7) {
+      left: 29%;
+    }
+  }
 
-	// change so hamburger displays instread
-	.nav {
-		display: none;
-	}
+  // change so hamburger displays instead
+  .nav {
+    display: none;
+  }
 
-	.free-nav {
-		display: none;
-	}
+  .free-nav {
+    display: none;
+  }
 
-	// header area
-	.header {
-		height: 60vh;
+  // header area
+  .header {
+    min-height: 60vh;
 
-		&__content {
-			text-align: center;
+    &__content {
+      text-align: center;
 
-			& h1 {
-				font-size: 4.5rem;
-			}
-		}
-	}
+      & h1 {
+        font-size: 4.5rem;
+      }
+    }
+  }
 
-	// about me section
-	.about-me {
-		height: auto;
+  // about me section
+  .about-me {
+    height: auto;
 
-		&__flex {
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-		}
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-		&__description {
-			padding: 0 3rem;
-			height: inherit;
-		}
+    &__description {
+      padding: 0 3rem;
+      height: inherit;
+    }
 
-		&__skills {
-			padding-left: 0rem;
-			padding-top: 5rem;
-		}
+    &__skills {
+      padding-left: 0rem;
+      padding-top: 5rem;
+    }
 
-		&__grid {
-			grid-template-columns: repeat(2, 1fr);
-			&__item {
-				padding: 4rem 4rem;
-			}
-		}
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      &__item {
+        padding: 4rem 4rem;
+      }
+    }
 
-		& .chevron {
-			display: none;
-		}
-	}
+    & .chevron {
+      display: none;
+    }
+  }
 
-	// projects section
-	.projects {
-		height: 140vh;
-		&__grid {
-			grid-gap: 1.5rem;
-			padding: 0 1.25rem;
-		}
-	}
+  // projects section
+  .projects {
+    &__grid {
+      grid-gap: 1.5rem;
+      padding: 0 1.25rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-me {
+    &__container {
+      max-width: $response-width-4;
+    }
+  }
+
+  .projects {
+    &__container {
+      max-width: $response-width-4;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about-me {
+    &__container {
+      max-width: 330px;
+    }
+  }
+
+  .projects {
+    &__container {
+      max-width: $response-width-5;
+    }
+  }
+
+  .menu {
+    &__bar {
+      width: 2.75rem;
+    }
+  }
 }
 
 // Smart Phones
 @media only screen and (max-width: 420px) {
-	// hamburger menu
-	.menu {
-		display: block;
-		top: 0.6rem;
-		right: 1.05rem;
-	}
+  // hamburger menu
+  .menu {
+    display: block;
+    top: 0.6rem;
+    right: 1.05rem;
+  }
 
-	// change the background animation
-	.animation {
-		& li:nth-child(1) {
-			left: 4.5%;
-			height: 55px;
-			width: 55px;
-		}
-		& li:nth-child(2) {
-			display: none;
-		}
-		& li:nth-child(3) {
-			display: none;
-		}
-		& li:nth-child(4) {
-			width: 50px;
-			height: 50px;
-			left: 30%;
-		}
-		& li:nth-child(5) {
-			left: 40%;
-		}
-		& li:nth-child(6) {
-			width: 60px;
-			height: 60px;
-			left: 50%;
-		}
-		& li:nth-child(7) {
-			left: 72%;
-		}
-	}
+  // change the background animation
+  .animation {
+    & li:nth-child(1) {
+      left: 4.5%;
+      height: 55px;
+      width: 55px;
+    }
+    & li:nth-child(2) {
+      display: none;
+    }
+    & li:nth-child(3) {
+      display: none;
+    }
+    & li:nth-child(4) {
+      width: 50px;
+      height: 50px;
+      left: 30%;
+    }
+    & li:nth-child(5) {
+      left: 40%;
+    }
+    & li:nth-child(6) {
+      width: 60px;
+      height: 60px;
+      left: 50%;
+    }
+    & li:nth-child(7) {
+      left: 72%;
+    }
+  }
 
-	// change so hamburger displays instread
-	.nav {
-		display: none;
-	}
+  // change so hamburger displays instead
+  .nav {
+    display: none;
+  }
 
-	.free-nav {
-		display: none;
-	}
+  .free-nav {
+    display: none;
+  }
 
-	// header area
-	.header {
-		height: 60vh;
+  // header area
+  .header {
+    &__content {
+      text-align: center;
 
-		&__content {
-			text-align: center;
+      & h1 {
+        font-size: 3rem;
+      }
+    }
+  }
 
-			& h1 {
-				font-size: 3rem;
-			}
-		}
-	}
+  // about me section
+  .about-me {
+    height: auto;
 
-	// about me section
-	.about-me {
-		height: auto;
+    &__flex {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
 
-		&__flex {
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-		}
+    &__description {
+      padding: 0 3rem;
+      height: inherit;
+    }
 
-		&__description {
-			padding: 0 3rem;
-			height: inherit;
-		}
+    &__skills {
+      padding-left: 0rem;
+      padding-top: 5rem;
+      width: 270px;
+    }
 
-		&__skills {
-			padding-left: 0rem;
-			padding-top: 5rem;
-		}
+    &__grid {
+      grid-template-columns: repeat(2, minmax(10rem, 1fr));
+      &__item {
+        padding: 2.5rem 2rem !important;
+      }
+    }
 
-		&__grid {
-			grid-template-columns: repeat(2, 1fr);
-			&__item {
-				padding: 4rem 2rem;
-			}
-		}
+    & .chevron {
+      display: none;
+    }
+  }
 
-		& .chevron {
-			display: none;
-		}
-	}
+  // projects section
+  .projects {
+    &__container {
+      max-width: 320px;
+    }
 
-	// projects section
-	.projects {
-		&__grid {
-			margin: 1.1rem;
-		}
-	}
+    &__grid {
+      margin: 1.1rem;
+    }
+  }
 }
 
 @media only screen and (max-height: 1250px) {
-	.projects__grid {
-		margin: 1rem;
-	}
+  .projects__grid {
+    margin: 1rem;
+  }
 }
 
 // for older smartphones
 @media only screen and (max-height: 750px) {
-	.about-me__grid__item {
-		padding: 4rem 1.5rem;
-	}
+  .about-me__grid__item {
+    padding: 4rem 1.5rem;
+  }
 }
 
 // iphone 5
 @media only screen and (max-height: 568px) {
-	.projects {
-		&__grid__item__buttons a {
-			padding: 0.7rem;
+  .projects {
+    &__grid__item__buttons a {
+      padding: 0.7rem;
 
-			&:first-child {
-				margin: 0;
-			}
-		}
-	}
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
 }
